@@ -20,6 +20,40 @@ body {
     }
     
 
+    .slider{
+        margin: 0 auto;
+        width: 800px;
+        height: 400px;
+        overflow: hidden;
+    }
+    .slides{
+        width: 400%;
+        height: 400px;
+        display: flex;
+    }
+    .slides input{
+        display: none;
+    }
+    .slide{
+        width: 25%;
+        position: relative;
+    }
+    .slide img{
+        width: 800px;
+    }
+    .manual-navigation{
+        position: absolute;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+    .manual-btn{
+        border: 2px solid#fff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+    }s
     .menu__intensDeCima {
         display: flex;
         align-items: center;
@@ -140,6 +174,40 @@ body {
         height: 150px;
     }
 
+    .slider{
+        margin: 0 auto;
+        width: 800px;
+        height: 400px;
+        overflow: hidden;
+    }
+    .slides{
+        width: 400%;
+        height: 400px;
+        display: flex;
+    }
+    .slides input{
+        display: none;
+    }
+    .slide{
+        width: 25%;
+        position: relative;
+    }
+    .slide img{
+        width: 800px;
+    }
+    .manual-navigation{
+        position: absolute;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+    .manual-btn{
+        border: 2px solid#fff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
     .menu__intensDeCima {
         display: flex;
         align-items: center;
@@ -257,6 +325,41 @@ body {
 
     }
 
+        .slider{
+            margin: 0 auto;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+        }
+        .slides{
+            width: 400%;
+            height: 400px;
+            display: flex;
+        }
+        .slides input{
+            display: none;
+        }
+        .slide{
+            width: 25%;
+            position: relative;
+        }
+        .slide img{
+            width: 800px;
+        }
+        .manual-navigation{
+            position: absolute;
+            width: 800px;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+        }
+        .manual-btn{
+            border: 2px solid#fff;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
     .menu__intensDeCima {
         display: flex;
         align-items: center;
