@@ -13,16 +13,15 @@ body {
 }
 
 @keyframes animacao {
-    0% { margin-left: 0%; }
-    
-    
-    20% { margin-left: -55%; }
-   
-    30%{margin-left:-110%}
-  
-    40%{margin-left:-165.5%}
-   
-    50% { margin-left: -221%; }
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); } 
+    25% { transform: translateX(-20%); } 
+    45% { transform: translateX(-30%); } 
+    50% { transform: translateX(-40%); } 
+    70% { transform: translateX(-50%); }
+    75% { transform: translateX(-60%); } 
+    95% { transform: translateX(-70%); } 
+    100% { transform: translateX(0); } 
      
 }
 
@@ -32,25 +31,24 @@ img{
 }
  
 .galery {
-    width: 150%;
-    height: 150;
-   
+    width: 100%;
+    height: 20vh; 
+    overflow: hidden; 
+    position: relative;
 }
 
 .galery .fotos {
-    width: 100%;
-    height: 150px;
-    animation-name: animacao;
-    animation-duration:20s;
-    animation-iteration-count: infinite;
+    display: flex;
+    width: 400%; 
+    height: 100%;
+    animation: animacao 20s linear infinite; 
 }
 
 .galery .fotos img {
-    
-    align-items: center;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
     border-radius: 10px;
-    width:150%;
-    height:150px;
 }
 
 
