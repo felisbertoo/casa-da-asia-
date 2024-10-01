@@ -53,155 +53,277 @@ img{
 */
 
 @media (max-width: 720px) {
-    
-        @keyframes animacao {
-            0% { transform: translateX(0); }
-            20% { transform: translateX(0); } 
-            25% { transform: translateX(-20%); } 
-            45% { transform: translateX(-30%); } 
-            50% { transform: translateX(-40%); } 
-            70% { transform: translateX(-50%); }
-            75% { transform: translateX(-60%); } 
-            95% { transform: translateX(-70%); } 
-            100% { transform: translateX(0); } 
+
+    body {
+        width: 720px;
+        height: 1280px;
+    }
+    @keyframes animacao {
+        0% {
+            transform: translateX(0);
         }
+
+        20% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-20%);
+        }
+
+        45% {
+            transform: translateX(-30%);
+        }
+
+        50% {
+            transform: translateX(-40%);
+        }
+
+        70% {
+            transform: translateX(-50%);
+        }
+
+        75% {
+            transform: translateX(-60%);
+        }
+
+        95% {
+            transform: translateX(-70%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100px;
+        height: 94px;
+        margin-left: 10px;
+        z-index: 10;
+    }
+    
+    .hamburger img {
+        width: 90%;
+        height: 90%;
+        margin-left: 20%;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    
+    /* Estilos da barra lateral (sidebar) */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #DA0000;
+        padding-top: 60px;
+        transition: 0.3s;
+        z-index: 9;
+    }
+    
+    .sidebar.active {
+       left:0;
+    }
+    
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .sidebar ul li {
+        padding: 15px 20px;
+        text-align: left;
         
-        .galery {
-            width: 100%;
-            height: 20vh; 
-            overflow: hidden; 
-            position: relative;
-        }
+    }
     
-        .galery .fotos {
-            display: flex;
-            width: 400%; 
-            height: 100%;
-            animation: animacao 20s linear infinite; 
-        }
+    .sidebar ul li a {
+        color: white;
+        text-decoration:none;
+        font-size: 40px;
+        display: block;
+        transition: 0.3s;
+    }
     
-        .galery .fotos img {
-            width: 100%; 
-            height: 100%;
-            object-fit: cover; 
-            border-radius: 10px;
-        }
+    .sidebar ul li a:hover {
+        background-color: #575757;
+    }
     
-        header {
-            width: 100%;
-            height: auto;
-        }
+    /* Overlay para escurecer o fundo quando o menu estiver ativo */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 8;
+        transition: 0.3s;
+    }
     
-        .menu__intensDeCima {
-            display: flex;
-            flex-wrap: wrap; /* Quebra itens em novas linhas quando necessário */
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px; /* Espaçamento entre os itens */
-        }
+    .overlay.active {
+        display: block;
+    }
+
+    .galery {
+        width: 762px;
+        height: 210px;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .galery .fotos {
+        display: flex;
+        width: 400%;
+        height: 100%;
+        animation: animacao 20s linear infinite;
+    }
+
+    .galery .fotos img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border:solid black;
+        padding: 5px;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+    }
     
-        header img {
-            width: 70px;
-            height: 70px;
-        }
-    
-        .menu__hamburguer, .menu__perfil {
-            padding: 5px;
-            width: 70px;
-        }
-    
-        .menu__panda {
-            width: 150px;
-            height: 100px;
-        }
-    
-        .menu__perfil {
-            width: 50px;
-        }
-    
-        /* A barra de pesquisa */
-        .menu__caixaText {
-            width: 100%; /* Ocupa 100% da largura da linha */
-            margin-top: 10px; /* Margem superior */
-            text-align: center;
-            padding: 10px;
-            font-size: 15px;
-            border-radius: 10px;
-            background-color: #f5f5f5;
-            flex-basis: 100%; /* Força a caixa de pesquisa para a linha de baixo */
-            order: 2; /* Garante que ela apareça abaixo dos outros itens */
-        }
-    
-        /* Esconde a barra de navegação na versão mobile */
-        .sites {
-            display: none;
-        }
-    
-        .links {
-            display: none;
-        }
-    
+
+    .menu__intensDeCima {
+        display: flex;
+        flex-wrap: wrap;
+        /* Quebra itens em novas linhas quando necessário */
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        /* Espaçamento entre os itens */
+    }
+
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .menu__perfil {
+        width: 81px;
+        height: 75px;
+    }
+
+    .menu__panda {
+        width: 194px;
+        height: 125px;
+        flex-shrink: 0;
+    }
+
    
-    
-    
-    
-        .itens {
-            display: flex;
-            gap: 500px;
-            font-size: 18px;
-            font-weight: 400;
-            color: white;
-            text-decoration: none;
-        }
-    
-        main {
-          border-width: 20px;
-          border-color: black;
-        }
 
+    /* A barra de pesquisa */
+    .menu__caixaText_cell {
+        width: 100%;
+        width: 618px;
+        height: 46px;
+        flex-shrink: 0;
+        border: 2px solid #000;
+        background: #FFF;
+        
+    }
+
+    /* Esconde a barra de navegação na versão mobile */
+    .sites {
+        width: 720px;
+        height: 85px;
+        flex-shrink: 0;
+        border: 2px solid #000;
+        background: #DA0000;
+        padding: 20px;
+        padding-left: 50px;
+        
+    }
+    .menu__caixaText {
+        display:none;
+    }
+
+    .links {
+        display: none;
+    }
+
+
+
+
+
+    .itens {
+        display: flex;
+        gap: 500px;
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        text-decoration: none;
+    }
+
+    main {
+        border-width: 20px;
+        border-color: black;
+    }
+
+
+    footer {
        
-          .fot {
-            background-color: #FF1010;
-            height: 250px;
-            width: 100%;
-            margin-bottom: 0;
-            bottom:0;
-            position:fixed;
-            left: 0;
-           
-        }
-        .panda_rodape{
-            margin-top: 22px;
-           margin-left: 15px;  
-            }
-    
-    
         
-        .info{
-             margin-top: -30px;
-             margin-left: 3%;
-            }
-    
-        
-    
-         .atendimento{
-             margin-top: -40px;
-             margin-left: 34%;
-            
-    }
-    
-        .pagamentos{
-            margin-top: -80px;
-            margin-left: 85%; 
-    
-            
-            }
-        .redes_sociais{
-            margin-top: 80px;
-            margin-left: 85%;
-            }
+        bottom: 0;
+        position: fixed;
+       
+        width: 720px;
+        height: 140px;
+        flex-shrink: 0;
+        background: #DA0000;
+        margin-bottom: 0;
+
     }
 
+    .panda_rodape {
+        margin-top: 22px;
+        margin-left: 15px;
+    }
+
+
+
+    .info {
+        margin-top: -30px;
+        margin-left: 3%;
+    }
+
+
+
+    .atendimento {
+        margin-top: -40px;
+        margin-left: 34%;
+
+    }
+
+    .pagamentos {
+        margin-top: -80px;
+        margin-left: 85%;
+
+
+    }
+
+    .redes_sociais {
+        margin-top: 80px;
+        margin-left: 85%;
+    }
+}
 
 
 @media (min-width: 721px) and (max-width: 2048px) {
