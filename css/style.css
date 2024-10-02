@@ -349,7 +349,7 @@ img{
      
     .galery {
         width: 100%;
-        height: 20vh; 
+        height: 20%; 
         overflow: hidden; 
         position: relative;
         margin-top: -10px;
@@ -364,7 +364,7 @@ img{
     
     .galery .fotos img {
         width: 100%; 
-        height: 100%;
+        height: 50%;
         object-fit: cover; 
         border-width: 2px;
         border-color: black;
@@ -379,33 +379,52 @@ img{
 
     .menu__intensDeCima {
         display: flex;
+        flex-wrap: wrap;
+        /* Quebra itens em novas linhas quando necessário */
         align-items: center;
-        flex-direction: row;
         justify-content: space-between;
+        gap: 10px;
     
     }
     
 
     .menu__panda {
-        width: 200px;
-        height: 100px;
+        width: 194px;
+        height: 125px;
+        flex-shrink: 0;
     }
     
     .menu__caixaText {
-        border-radius: 10%;
-        width: 50%; /* Aumenta a largura da caixa de texto para 50% */
-        text-align: flex;
-        margin-right: 60px;
-        padding: 100px; /* Adiciona um pouco de padding para melhorar a aparência */
+        width: 100%;
+        width: 618px;
+        height: 46px;
+        flex-shrink: 0;
+        border: 2px solid #000;
+        background: #FFF;
     }
 
+    .navbar .hamburger img{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
     
+    .sites input{
+        display:none;
+    }
 
     .sites {
-        background-color: #ff1010;
-        width: 100%;
-        margin-top: 0%;
-        align-items:center; 
+        
+            width: 100%;
+            height: 20%;
+            flex-shrink: 0;
+            border: 2px solid #000;
+            background: #DA0000;
+            padding: 20px;
+            padding-left: 50px;
+            
+        
     }
     .menu__carrinho{
         width:100px;
