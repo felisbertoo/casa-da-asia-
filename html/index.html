@@ -10,21 +10,21 @@
         Casa da Asia
     </title>
     <script>
-        function clicar(){
-        const hamburger = document.getElementById('hamburger');
-        const sidebar = document.getElementById('sidebar');
-        const overlay = document.getElementById('overlay');
+        function clicar() {
+            const hamburger = document.getElementById('hamburger');
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
 
-        hamburger.addEventListener('click', () => {
-            sidebar.classList.toggle('active');
-            overlay.classList.toggle('active');
-        });
+            hamburger.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+                overlay.classList.toggle('active');
+            });
 
-        overlay.addEventListener('click', () => {
-            sidebar.classList.remove('active');
-            overlay.classList.remove('active');
-        });
-    }
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        }
     </script>
 </head>
 
@@ -37,10 +37,10 @@
 
             <div class="navbar" onclick="clicar()">
                 <div class="hamburger" id="hamburger">
-                  <img src="../imagens/menu.png">
+                    <img src="../imagens/menu.png">
                 </div>
             </div>
-        
+
             <div class="sidebar" id="sidebar">
                 <ul>
                     <li><a href="../html/alimentos.html">Alimentos</a></li>
@@ -49,19 +49,20 @@
                     <li><a href="../html/receitas.html">Receitas</a></li>
                 </ul>
             </div>
-        
+
             <div class="overlay" id="overlay"></div>
 
-     <a class="inicio" href="../html/index.html"><img  src="../imagens/panda.png" class="menu__panda"></a>  
+            <a class="inicio" href="../html/index.html"><img src="../imagens/panda.png" class="menu__panda"></a>
 
             <input type="text" class="menu__caixaText">
-            
-     <a class="perfil" href="../html/perfil.html"> <img  src="../imagens/perfil.png" class="menu__perfil"> </a>
-            
+
+            <a class="perfil" href="../html/perfil.html"> <img src="../imagens/perfil.png" class="menu__perfil"> </a>
 
 
-     <a class="carrinho" href="../html/finallizepedido.html"><img src="../imagens/carrinho.png"class="menu__carrinho"></a>
-        
+
+            <a class="carrinho" href="../html/finallizepedido.html"><img src="../imagens/carrinho.png"
+                    class="menu__carrinho"></a>
+
 
         </div>
         <div class="sites">
@@ -69,7 +70,7 @@
             <a class="links" href="../html/bebidas.html">Bebidas</a>
             <a class="links" href="../html/utencilios.html">Utensilhos</a>
             <a class="links" href="../html/receitas.html">Receitas</a>
-            <input type="text" class="menu__caixaText_cell" >
+            <input type="text" class="menu__caixaText_cell">
         </div>
 
 
@@ -91,34 +92,16 @@
 
     </main>
 
-    <footer class="fot">
-
-
-
-        <div class="panda_rodape" width="10px" height="10px">
-            <img src="../imagens/panda.png">
+    <footer>
+        <img src="../imagens/panda.png" alt="Logo do Panda">
+        <h4>Integrantes:</h4>
+        <div class="footer-content">
+            
+            <p>Edgar</p>
+            <p>Guilherme</p>
+            <p>Henryque</p>
+            <p>Isabela</p>
         </div>
-
-        <div class="info">
-
-            <br> Sobre Nós <br>
-            Edgar <br>
-            Guilherme<br>
-            Henryque <br>
-            Isabela<br>
-
-        </div>
-
-
-
-        <div class="pagamentos">
-
-        </div>
-        </a>
-        </div>
-
-
-
     </footer>
 
 
