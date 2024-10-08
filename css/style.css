@@ -263,8 +263,6 @@ img{
 
 
 
-
-
     .itens {
         display: flex;
         gap: 500px;
@@ -279,6 +277,11 @@ img{
         border-color: black;
     }
 
+    .menu_perfil2{
+        height: 50px;
+        width: 50px;
+        align-items: center;
+    }
 
     footer {
 
@@ -468,6 +471,7 @@ img{
         background: #DA0000;
         padding: 20px;
         padding-left: 50px;
+        position: fixed;
 
 
     }
@@ -514,7 +518,11 @@ img{
         text-decoration: none;
     }
 
-
+    .menu_perfil2{
+        height: 50px;
+        width: 50px;
+        align-items: center;
+    }
 
     footer {
         bottom: 0;
@@ -549,14 +557,6 @@ img{
         margin: 0;
         font-size: 16px;
     }
-
-
-
-
-
-
-
-
 
 
 
@@ -749,6 +749,11 @@ img{
         text-decoration: none;
     }
 
+    .menu_perfil2{
+        height: 50px;
+        width: 50px;
+        align-items: center;
+    }
 
 
     footer {
