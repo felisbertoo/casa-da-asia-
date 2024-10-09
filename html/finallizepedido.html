@@ -85,3 +85,63 @@
 
 </body>
 </html>
+<!--
+<?php
+session_start();
+?>
+
+<?php
+
+$conexao=mysqli_connect("localhost","root","","casadaasia");
+$sql = "SELECT idproduto, titulo, imagem, preco, descricao FROM produto WHERE status = 'true'"; 
+
+
+$resultado = mysqli_query($conexao, $sql);
+
+
+if ($resultado) {
+   
+    while ($produto = mysqli_fetch_assoc($resultado)) {
+        
+        echo "<form method='POST'>"; 
+
+        echo "Título: " . $produto['titulo'] . "<br>";
+        echo "Imagem: <img src='" . $produto['imagem'] . "' alt='" . $produto['titulo'] . "'><br>";
+        echo "Preço: " . $produto['preco'] . "<br>";
+        echo "Descrição: " . $produto['descricao'] . "<br><hr>";
+
+      
+        echo "<input type='hidden' name='idproduto' value='" . $produto['idproduto'] . "'>";
+
+     
+        echo "<input type='submit' name='menos' value='-'><br><br>";
+
+        echo "</form>"; 
+    }
+} else {
+    echo "Nenhum produto encontrado no carrinho.";
+}
+if (isset($_POST['menos'])) {
+    $idproduto = $_POST['idproduto']; 
+
+    
+    $sql2 = "UPDATE produto SET status = 'false' WHERE idproduto = $idproduto";
+
+    
+    $resultado2 = mysqli_query($conexao, $sql2);
+
+   
+    if ($resultado2) {
+        echo "Status do produto alterado com sucesso.";
+    } else {
+        echo "Erro ao alterar o status do produto: " . mysqli_error($conexao);
+    }
+}
+
+
+
+mysqli_close($conexao);
+
+?>
+-->
+

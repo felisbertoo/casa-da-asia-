@@ -262,6 +262,13 @@ img{
     }
 
 
+    .menu_perfil2{
+        height: 50px;
+        width: 50px;
+        align-items: center;
+        margin-left: 35%;
+    }
+
 
     .itens {
         display: flex;
@@ -277,11 +284,7 @@ img{
         border-color: black;
     }
 
-    .menu_perfil2{
-        height: 50px;
-        width: 50px;
-        align-items: center;
-    }
+    
 
     footer {
 
@@ -508,7 +511,11 @@ img{
 
     }
 
-
+    .menu_perfil2{
+        height: 50px;
+        width: 50px;
+        align-items: center;
+    }
     .itens {
         display: flex;
         gap: 500px;
@@ -516,12 +523,6 @@ img{
         font-weight: 400;
         color: white;
         text-decoration: none;
-    }
-
-    .menu_perfil2{
-        height: 50px;
-        width: 50px;
-        align-items: center;
     }
 
     footer {
@@ -559,9 +560,14 @@ img{
     }
 
 
-
-
 }
+input{
+    border-radius: 20px;
+    width:300px;
+    
+ 
+ }
+ 
 
 
 @media (min-width: 2048px) {
@@ -749,10 +755,11 @@ img{
         text-decoration: none;
     }
 
-    .menu_perfil2{
-        height: 50px;
-        width: 50px;
+    .menu__perfil2{
+        height: 20px;
+        width: 20px;
         align-items: center;
+        margin-left: 40%;
     }
 
 
@@ -788,16 +795,22 @@ img{
         margin: 0;
         font-size: 16px;
     }
+}
 
-
-
-
-
-
-
+input{
+   border-radius: 20px;
+   width:300px;
+   
 
 }
 
+.formulariocompleto{
+    margin-top: 20%;
+    margin-left: 35%;
+    border:solid 3px;
+    margin-right: 800px;
+}
+ 
 /*Smartphone:720x1280
 tablet: 2048x1536
 Desktop: 2560x1440
