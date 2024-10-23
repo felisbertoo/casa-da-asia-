@@ -336,6 +336,11 @@ img{
         border: solid 1px;
         font-size: 14px;
     }
+
+    .formulariocompleto{
+        container: 2px;
+        align-items: center;   
+    }
 }
 
 
@@ -574,7 +579,11 @@ img{
         border: solid 1px;
         font-size: 14px;
     }
-
+    .formulariocompleto{
+        container: 2px;
+        align-items: center;
+        
+    }
 }
 
 
@@ -792,9 +801,21 @@ img{
         border: solid 2px;
         font-size: 20px;
     }
+
+    .main_produto{
+    height: 50px;
+    width: 50px;
+    }
+
+    .formulariocompleto{
+        container: 2px;
+        align-items: center;
+
+    }
+    .main_container{
+        align-items: center;
+    }
 }
-
-
 /*Smartphone:720x1280
 tablet: 2048x1536
 Desktop: 2560x1440
